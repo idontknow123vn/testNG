@@ -128,6 +128,9 @@ public class SignUpTestTestNG {
 
         FrameLocator frame = page.frameLocator("//iframe[@title='reCAPTCHA']");
         frame.locator("//span[@id='recaptcha-anchor']").click();
+
+        page.pause();
+        
         page.click("button[type='submit']");
 
         try {
